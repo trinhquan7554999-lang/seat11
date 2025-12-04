@@ -1,0 +1,296 @@
+/*!
+ * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+.fa,
+.fas,
+.far,
+.fal,
+.fad,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -.0667em;
+}
+
+.fa-xs {
+  font-size: .75em;
+}
+
+.fa-sm {
+  font-size: .875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-chair:before {
+  content: "\f6c0";
+}
+
+.fa-info-circle:before {
+  content: "\f05a";
+}
+
+.fa-star:before {
+  content: "\f005";
+}
+
+.fa-medal:before {
+  content: "\f5a2";
+}
+
+.fa-feather:before {
+  content: "\f52d";
+}
+
+.fa-home:before {
+  content: "\f015";
+}
+
+.fa-leaf:before {
+  content: "\f06c";
+}
+
+.fa-tools:before {
+  content: "\f7d9";
+}
+
+.fa-shield-alt:before {
+  content: "\f3ed";
+}
+
+.fa-map-marker-alt:before {
+  content: "\f3c5";
+}
+
+.fa-phone:before {
+  content: "\f095";
+}
+
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+.fa-building:before {
+  content: "\f1ad";
+}
+
+.fa-book:before {
+  content: "\f02d";
+}
+
+.fa-heart:before {
+  content: "\f004";
+}
+
+.fa-tree:before {
+  content: "\f1bb";
+}
+
+.fa-award:before {
+  content: "\f559";
+}
+
+.fa-smile:before {
+  content: "\f118";
+}
+
+.fa-users:before {
+  content: "\f0c0";
+}
+
+.fa-hammer:before {
+  content: "\f6e3";
+}
+
+.fa-hands:before {
+  content: "\f4c2";
+}
+
+.fa-search:before {
+  content: "\f002";
+}
+
+.fa-paper-plane:before {
+  content: "\f1d8";
+}
+
+.fa-clock:before {
+  content: "\f017";
+}
+
+.fa-comment:before {
+  content: "\f075";
+}
+
+.fa-question-circle:before {
+  content: "\f059";
+}
+
+.fa-question:before {
+  content: "\f128";
+}
+
+.fa-gavel:before {
+  content: "\f0e3";
+}
+
+.fa-file-contract:before {
+  content: "\f56c";
+}
+
+.fa-user-circle:before {
+  content: "\f2bd";
+}
+
+.fa-shopping-cart:before {
+  content: "\f07a";
+}
+
+.fa-exchange-alt:before {
+  content: "\f362";
+}
+
+.fa-copyright:before {
+  content: "\f1f9";
+}
+
+.fa-link:before {
+  content: "\f0c1";
+}
+
+.fa-exclamation-triangle:before {
+  content: "\f071";
+}
+
+.fa-balance-scale:before {
+  content: "\f24e";
+}
+
+.fa-edit:before {
+  content: "\f044";
+}
+
+.fa-cookie-bite:before {
+  content: "\f564";
+}
+
+.fa-cog:before {
+  content: "\f013";
+}
+
+.fa-user-shield:before {
+  content: "\f505";
+}
+
+.fa-sync:before {
+  content: "\f021";
+}
+
+.fa-sync-alt:before {
+  content: "\f2f1";
+}
+
+.fa-credit-card:before {
+  content: "\f09d";
+}
+
+.fa-money-bill-wave:before {
+  content: "\f53a";
+}
+
+.fa-file-invoice-dollar:before {
+  content: "\f571";
+}
+
+.fa-tag:before {
+  content: "\f02b";
+}
+
+.fa-receipt:before {
+  content: "\f543";
+}
+
+.fa-file-invoice:before {
+  content: "\f570";
+}
+
+.fa-shipping-fast:before {
+  content: "\f48b";
+}
+
+.fa-box:before {
+  content: "\f466";
+}
+
+.fa-map-marked-alt:before {
+  content: "\f5a0";
+}
+
+.fa-truck:before {
+  content: "\f0d1";
+}
+
+.fa-search-location:before {
+  content: "\f689";
+}
+
+.fa-globe-americas:before {
+  content: "\f57d";
+}
+
+.fa-box-open:before {
+  content: "\f49e";
+}
+
+.fa-undo-alt:before {
+  content: "\f2ea";
+}
+
+.fa-calendar-check:before {
+  content: "\f274";
+}
+
+.fa-dollar-sign:before {
+  content: "\f155";
+}
+
+.fa-times-circle:before {
+  content: "\f057";
+}
+
+.fa-wrench:before {
+  content: "\f0ad";
+}
+
+.fa-gift:before {
+  content: "\f06b";
+} 
